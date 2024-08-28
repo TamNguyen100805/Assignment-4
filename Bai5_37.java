@@ -13,14 +13,13 @@ public class Bai5_37 {
 
         while (incorrectAnswers < 3) {
             int numOfNumbers = random.nextInt(4) + 2;
-            
-            int[] numbers = new int[numOfNumbers];
             int correctAnswer = 0;
             
             for (int i = 0; i < numOfNumbers; i++) {
-                numbers[i] = random.nextInt(10) + 1;
-                correctAnswer += numbers[i];
-                System.out.print(numbers[i]);
+                int numbers = random.nextInt(10) + 1;
+                correctAnswer += numbers;
+                
+                System.out.print(numbers);
                 if (i < numOfNumbers - 1) {
                     System.out.print(" + ");
                 }
